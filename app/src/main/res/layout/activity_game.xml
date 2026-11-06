@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Game screen.
+   Left: the computer's hand, the board, the human's hand, what to do next, and the action buttons.
+   Right: round information, scores, Help and Save, the boneyard, and the game log.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:background="@color/table_dark"
+   android:orientation="horizontal"
+   android:padding="6dp">
+
+   <!-- Play area -->
+   <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="3"
+      android:orientation="vertical">
+
+      <TextView
+         android:id="@+id/computerLabel"
+         style="@style/Domino.Caption" />
+
+      <edu.ramapo.ahira.domino.view.HandView
+         android:id="@+id/computerHand"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+
+      <edu.ramapo.ahira.domino.view.BoardView
+         android:id="@+id/boardView"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_marginTop="4dp"
+         android:layout_marginBottom="4dp"
+         android:layout_weight="1" />
+
+      <TextView
+         android:id="@+id/humanLabel"
+         style="@style/Domino.Caption" />
+
+      <edu.ramapo.ahira.domino.view.HandView
+         android:id="@+id/humanHand"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+
+      <TextView
+         android:id="@+id/promptText"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textColor="@color/accent"
+         android:textSize="15sp" />
+
+      <HorizontalScrollView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+               android:id="@+id/playLeftButton"
+               style="@style/Domino.ActionButton" />
+
+            <Button
+               android:id="@+id/playRightButton"
+               style="@style/Domino.ActionButton" />
+
+            <Button
+               android:id="@+id/playUpButton"
+               style="@style/Domino.ActionButton" />
+
+            <Button
+               android:id="@+id/playDownButton"
+               style="@style/Domino.ActionButton" />
+
+            <Button
+               android:id="@+id/drawButton"
+               style="@style/Domino.ActionButton"
+               android:text="@string/draw" />
+
+            <Button
+               android:id="@+id/passButton"
+               style="@style/Domino.ActionButton"
+               android:text="@string/pass" />
+
+            <Button
+               android:id="@+id/computerTurnButton"
+               style="@style/Domino.ActionButton"
+               android:text="@string/computer_turn" />
+         </LinearLayout>
+      </HorizontalScrollView>
+   </LinearLayout>
+
+   <!-- Side panel -->
+   <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_marginStart="6dp"
+      android:layout_weight="1.3"
+      android:background="@color/panel"
+      android:orientation="vertical"
+      android:padding="8dp">
+
+      <TextView
+         android:id="@+id/roundInfo"
+         style="@style/Domino.Caption" />
+
+      <TextView
+         android:id="@+id/nextPlayer"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textColor="@color/accent"
+         android:textSize="18sp"
+         android:textStyle="bold" />
+
+      <!-- Scores of both players -->
+      <TableLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="4dp"
+         android:stretchColumns="0">
+
+         <TableRow>
+            <TextView style="@style/Domino.ScoreCell" />
+
+            <TextView
+               style="@style/Domino.ScoreCell"
+               android:text="@string/scores_column_round"
+               android:textColor="@color/text_dim" />
+
+            <TextView
+               style="@style/Domino.ScoreCell"
+               android:text="@string/scores_column_tournament"
+               android:textColor="@color/text_dim" />
+         </TableRow>
+
+         <TableRow>
+            <TextView
+               style="@style/Domino.ScoreCell"
+               android:gravity="start"
+               android:text="@string/human" />
+
+            <TextView
+               android:id="@+id/humanRoundScore"
+               style="@style/Domino.ScoreCell" />
+
+            <TextView
+               android:id="@+id/humanTournamentScore"
+               style="@style/Domino.ScoreCell" />
+         </TableRow>
+
+         <TableRow>
+            <TextView
+               style="@style/Domino.ScoreCell"
+               android:gravity="start"
+               android:text="@string/computer" />
+
+            <TextView
+               android:id="@+id/computerRoundScore"
+               style="@style/Domino.ScoreCell" />
+
+            <TextView
+               android:id="@+id/computerTournamentScore"
+               style="@style/Domino.ScoreCell" />
+         </TableRow>
+      </TableLayout>
+
+      <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+         <Button
+            android:id="@+id/helpButton"
+            style="@style/Domino.ActionButton"
+            android:text="@string/help" />
+
+         <Button
+            android:id="@+id/saveButton"
+            style="@style/Domino.ActionButton"
+            android:text="@string/save_quit" />
+      </LinearLayout>
+
+      <TextView
+         android:id="@+id/boneyardLabel"
+         style="@style/Domino.Caption" />
+
+      <edu.ramapo.ahira.domino.view.HandView
+         android:id="@+id/boneyardView"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+
+      <TextView
+         style="@style/Domino.Caption"
+         android:text="@string/log_heading" />
+
+      <!-- The game log: every message, in one scrollable window -->
+      <ScrollView
+         android:id="@+id/logScroll"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:background="@color/log_background"
+         android:padding="6dp">
+
+         <TextView
+            android:id="@+id/logText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_light"
+            android:textIsSelectable="true"
+            android:textSize="13sp" />
+      </ScrollView>
+   </LinearLayout>
+</LinearLayout>

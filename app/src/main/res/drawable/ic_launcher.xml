@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- App icon: a standing 3-5 domino on green felt -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+   android:width="48dp"
+   android:height="48dp"
+   android:viewportWidth="48"
+   android:viewportHeight="48">
+   <path
+      android:fillColor="#1B5E20"
+      android:pathData="M4,0h40a4,4 0 0 1 4,4v40a4,4 0 0 1 -4,4h-40a4,4 0 0 1 -4,-4v-40a4,4 0 0 1 4,-4z" />
+   <path
+      android:fillColor="#FAF7EE"
+      android:pathData="M16,5h16a3,3 0 0 1 3,3v32a3,3 0 0 1 -3,3h-16a3,3 0 0 1 -3,-3v-32a3,3 0 0 1 3,-3z" />
+   <path
+      android:fillColor="#333333"
+      android:pathData="M15,23.5h18v1h-18z" />
+   <path
+      android:fillColor="#222222"
+      android:pathData="M17.8,9.5a2,2 0 1 0 4,0a2,2 0 1 0 -4,0z M22,14a2,2 0 1 0 4,0a2,2 0 1 0 -4,0z M26.2,18.5a2,2 0 1 0 4,0a2,2 0 1 0 -4,0z M17.8,29a2,2 0 1 0 4,0a2,2 0 1 0 -4,0z M26.2,29a2,2 0 1 0 4,0a2,2 0 1 0 -4,0z M22,33.5a2,2 0 1 0 4,0a2,2 0 1 0 -4,0z M17.8,38a2,2 0 1 0 4,0a2,2 0 1 0 -4,0z M26.2,38a2,2 0 1 0 4,0a2,2 0 1 0 -4,0z" />
+</vector>

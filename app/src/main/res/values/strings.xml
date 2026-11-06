@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="app_name">35 Domino</string>
+
+   <!-- Start screen -->
+   <string name="title">35 Domino</string>
+   <string name="subtitle">Human vs. Computer · double-six set · score multiples of 3 or 5</string>
+   <string name="new_tournament">New tournament</string>
+   <string name="tournament_score_label">Points needed to win the tournament (1 to 10000):</string>
+   <string name="tournament_score_hint">e.g. 200</string>
+   <string name="start_button">Start new tournament</string>
+   <string name="resume_heading">Resume a saved game</string>
+   <string name="resume_button">Choose a saved game…</string>
+   <string name="save_folder">Saved games folder: %1$s</string>
+   <string name="bad_tournament_score">Please enter a whole number from %1$d to %2$d for the tournament score.</string>
+   <string name="choose_save_title">Choose a saved game</string>
+   <string name="browse_device">Browse device…</string>
+   <string name="no_saves">No saved games were found in %1$s. Use “Browse device…” to pick a file from anywhere on the device.</string>
+   <string name="cannot_read_file">Could not read %1$s: %2$s</string>
+   <string name="not_a_save_file">“%1$s” is not a valid 35 Domino save file.</string>
+   <string name="samples_not_copied">The sample save files could not be copied: %1$s</string>
+
+   <!-- Game screen: captions and labels -->
+   <string name="hand_caption">%1$s\'s hand: %2$d tiles, %3$d pips</string>
+   <string name="boneyard_caption">Boneyard (stock): %1$d tiles, top tile first</string>
+   <string name="round_info">Round %1$d  ·  Target %2$d  ·  Playing to %3$d</string>
+   <string name="next_player">Next player: %1$s</string>
+   <string name="waiting_for_round">Waiting for the next round</string>
+   <string name="scores_column_round">Round</string>
+   <string name="scores_column_tournament">Tournament</string>
+   <string name="human">Human</string>
+   <string name="computer">Computer</string>
+   <string name="log_heading">Game log</string>
+
+   <!-- Game screen: buttons -->
+   <string name="start_layout">Start the layout</string>
+   <string name="play_at_end">%1$s end (%2$d)</string>
+   <string name="draw">Draw from boneyard</string>
+   <string name="pass">Pass turn</string>
+   <string name="computer_turn">Play computer\'s turn</string>
+   <string name="help">Help</string>
+   <string name="save_quit">Save &amp; quit</string>
+
+   <!-- Game screen: what to do next -->
+   <string name="prompt_no_round">No round in progress.</string>
+   <string name="prompt_computer_turn">Computer\'s turn. Tap “Play computer\'s turn” to see its move; its reasoning appears in the game log.</string>
+   <string name="prompt_draw">None of your tiles matches an open end. Draw from the boneyard.</string>
+   <string name="prompt_pass">None of your tiles matches an open end and the boneyard is empty. You must pass.</string>
+   <string name="prompt_pick_tile">Your turn: tap a tile in your hand (or tap Help for a suggestion).</string>
+   <string name="prompt_pick_end">Choose the end where %1$s goes.</string>
+   <string name="prompt_no_fit">%1$s does not match any open end. Choose another tile.</string>
+
+   <!-- Game screen: dialogs -->
+   <string name="ok">OK</string>
+   <string name="cancel">Cancel</string>
+   <string name="problem_title">Problem</string>
+   <string name="help_title">Computer\'s recommendation</string>
+   <string name="target_title">Round %1$d: choose the target score</string>
+   <string name="first_player_title">Who plays first?</string>
+   <string name="round_over_title">Round over</string>
+   <string name="tournament_over_title">Tournament over</string>
+   <string name="next_round">Start the next round</string>
+   <string name="main_menu">Back to the start screen</string>
+   <string name="save_title">Save the game and quit</string>
+   <string name="save_prompt">File name for the saved game. It will be stored in %1$s</string>
+   <string name="save_and_quit">Save and quit</string>
+   <string name="bad_file_name">Please use 1 to 40 letters, digits, spaces, dots, dashes or underscores for the file name.</string>
+   <string name="saved_title">Game saved</string>
+   <string name="saved_message">The game was saved to\n%1$s\n\nThe game will now close.</string>
+   <string name="cannot_write_file">Could not save to %1$s: %2$s</string>
+   <string name="unfinished_round">the unfinished round</string>
+   <string name="leave_title">Leave the game?</string>
+   <string name="leave_message">The round in progress has not been saved and will be lost.</string>
+   <string name="leave">Leave without saving</string>
+   <string name="keep_playing">Keep playing</string>
+</resources>

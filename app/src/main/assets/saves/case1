@@ -1,0 +1,19 @@
+Tournament Score: 200
+
+Target Score: 5
+
+Computer:
+   Hand: 0-1 0-4 1-1 1-4 3-3 3-4 4-4 
+   Current Score: 0
+   Tournament Score: 40
+
+Human:
+   Hand: 0-0 0-3 0-6 1-3 1-6 3-6 4-6 
+   Current Score: 0
+   Tournament Score: 35
+
+Layout:   L 5-3 3-2 R
+
+Boneyard: 6-6 5-6 2-2 0-5 2-4 5-5 1-5 2-5 1-2 4-5 2-6 0-2
+
+Next Player: Human

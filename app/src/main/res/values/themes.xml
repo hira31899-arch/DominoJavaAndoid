@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <style name="Theme.Domino" parent="Theme.MaterialComponents.Light.NoActionBar">
+      <item name="colorPrimary">@color/primary</item>
+      <item name="colorPrimaryVariant">@color/primary_dark</item>
+      <item name="colorOnPrimary">@android:color/white</item>
+      <item name="colorSecondary">@color/secondary</item>
+      <item name="colorOnSecondary">@android:color/black</item>
+      <item name="android:statusBarColor">@color/table_dark</item>
+      <item name="android:navigationBarColor">@color/table_dark</item>
+      <item name="android:windowBackground">@color/table_dark</item>
+   </style>
+
+   <!-- Caption above a hand, the boneyard, or the log -->
+   <style name="Domino.Caption">
+      <item name="android:layout_width">match_parent</item>
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:textColor">@color/text_light</item>
+      <item name="android:textSize">14sp</item>
+      <item name="android:textStyle">bold</item>
+      <item name="android:paddingTop">2dp</item>
+   </style>
+
+   <!-- Cell of the score table -->
+   <style name="Domino.ScoreCell">
+      <item name="android:layout_width">wrap_content</item>
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:textColor">@color/text_light</item>
+      <item name="android:textSize">15sp</item>
+      <item name="android:paddingStart">6dp</item>
+      <item name="android:paddingEnd">6dp</item>
+      <item name="android:gravity">end</item>
+   </style>
+
+   <!-- Button in the row of actions under the human's hand -->
+   <style name="Domino.ActionButton" parent="Widget.MaterialComponents.Button">
+      <item name="android:layout_width">wrap_content</item>
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:layout_marginEnd">6dp</item>
+      <item name="android:textAllCaps">false</item>
+   </style>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- Background of the whole screen -->
+   <color name="table_dark">#0F2A1D</color>
+   <!-- Background of the side panel and the start screen cards -->
+   <color name="panel">#173F2C</color>
+   <!-- Background of the log window -->
+   <color name="log_background">#0A1F15</color>
+   <!-- Text on the dark backgrounds -->
+   <color name="text_light">#ECEFF1</color>
+   <color name="text_dim">#A5B8AD</color>
+   <!-- Highlights: whose turn it is, the prompt, problems -->
+   <color name="accent">#FFD54F</color>
+   <color name="problem">#FF8A80</color>
+   <!-- Theme colours used by the buttons and dialogs -->
+   <color name="primary">#00796B</color>
+   <color name="primary_dark">#004D40</color>
+   <color name="secondary">#FFB300</color>
+</resources>

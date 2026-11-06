@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Start screen: new tournament or resume a saved game -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:background="@color/table_dark"
+   android:fillViewport="true">
+
+   <LinearLayout
+      android:layout_width="520dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:orientation="vertical"
+      android:padding="24dp">
+
+      <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:text="@string/title"
+         android:textColor="@color/accent"
+         android:textSize="40sp"
+         android:textStyle="bold" />
+
+      <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="16dp"
+         android:gravity="center"
+         android:text="@string/subtitle"
+         android:textColor="@color/text_dim"
+         android:textSize="15sp" />
+
+      <!-- New tournament: ask for the tournament score -->
+      <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@color/panel"
+         android:orientation="vertical"
+         android:padding="16dp">
+
+         <TextView
+            style="@style/Domino.Caption"
+            android:text="@string/new_tournament"
+            android:textSize="18sp" />
+
+         <TextView
+            android:id="@+id/tournamentScoreLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:labelFor="@+id/tournamentScoreInput"
+            android:text="@string/tournament_score_label"
+            android:textColor="@color/text_light" />
+
+         <EditText
+            android:id="@+id/tournamentScoreInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:backgroundTint="@color/accent"
+            android:hint="@string/tournament_score_hint"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="5"
+            android:textColor="@color/text_light"
+            android:textColorHint="@color/text_dim" />
+
+         <Button
+            android:id="@+id/startButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start_button"
+            android:textAllCaps="false" />
+      </LinearLayout>
+
+      <!-- Resume: pick a save file -->
+      <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="16dp"
+         android:background="@color/panel"
+         android:orientation="vertical"
+         android:padding="16dp">
+
+         <TextView
+            style="@style/Domino.Caption"
+            android:text="@string/resume_heading"
+            android:textSize="18sp" />
+
+         <Button
+            android:id="@+id/resumeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/resume_button"
+            android:textAllCaps="false" />
+
+         <TextView
+            android:id="@+id/saveFolderText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_dim"
+            android:textIsSelectable="true"
+            android:textSize="12sp" />
+      </LinearLayout>
+
+      <!-- Problems and other messages (no toasts are used) -->
+      <TextView
+         android:id="@+id/mainMessage"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="12dp"
+         android:gravity="center"
+         android:textColor="@color/problem"
+         android:textSize="15sp" />
+   </LinearLayout>
+</ScrollView>

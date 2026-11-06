@@ -1,0 +1,19 @@
+Tournament Score: 100
+
+Target Score: 3
+
+Computer:
+   Hand:  3-3 
+   Current Score: 39
+   Tournament Score: 52
+
+Human:
+   Hand: 0-3  
+   Current Score: 30
+   Tournament Score: 73
+
+Layout: L 2-6 6-5 5-3 3-2 [D 4-1 1-2 2-2 2-5 5-5 5-4 U] 2-4 4-3 3-6 6-6 6-4 4-4 4-0 0-0 0-6 6-1 1-1 1-0 0-2 R
+
+Boneyard: 0-5 1-5 1-3    
+
+Next Player: Human
