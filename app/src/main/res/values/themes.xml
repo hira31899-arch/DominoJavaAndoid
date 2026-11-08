@@ -13,7 +13,7 @@
    </style>
 
    <!-- Caption above a hand, the boneyard, or the log -->
-   <style name="Domino.Caption">
+   <style name="Domino.Caption" parent="">
       <item name="android:layout_width">match_parent</item>
       <item name="android:layout_height">wrap_content</item>
       <item name="android:textColor">@color/text_light</item>
@@ -23,7 +23,7 @@
    </style>
 
    <!-- Cell of the score table -->
-   <style name="Domino.ScoreCell">
+   <style name="Domino.ScoreCell" parent="">
       <item name="android:layout_width">wrap_content</item>
       <item name="android:layout_height">wrap_content</item>
       <item name="android:textColor">@color/text_light</item>
